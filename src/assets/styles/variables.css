@@ -1,0 +1,52 @@
+:root {
+  /* Colores */
+  --color-primary: #007BFF;
+  --color-primary-50: rgba(0, 123, 255, 0.6);
+  --color-primary-20: rgba(0, 123, 255, 0.2);
+  --color-primary-hover: #005DC0;
+  --color-primary-light: #429DFF;
+  --color-primary-lighter: #97C9FF;
+  --color-primary-dark: #004895;
+  --color-primary-darker: #00336A;
+  --color-light: #F8F9FA;
+  --color-dark: #343A40;
+  --color-dark-secondary: #001f3f;
+  --color-gray: #EEEEEE;
+
+  --color-text-light: #ffffff;
+  --color-text-dark: #00003C;
+  --color-bg-dark: #242424;
+  --color-bg-light: #ffffff;
+
+  --color-shadow-primary: rgba(0, 123, 255, .25);
+  --color-shadow-primary-hover: rgba(0, 123, 255, .5);
+  --color-shadow-90: rgba(248, 249, 250, .9);
+  --color-shadow-80: rgba(248, 249, 250, .8);
+  --color-shadow-50: rgba(248, 249, 250, .5);
+  --color-shadow-20: rgba(248, 249, 250, .25);
+  --color-shadow-dark-80: rgba(0, 0, 0, .8);
+  --color-shadow-dark-50: rgba(0, 0, 0, .5);
+  --color-shadow-dark-20: rgba(0, 0, 0, .25);
+
+  /* Tipografía */
+  --font-primary: 'Montserrat', system-ui, Helvetica, Arial, sans-serif;
+  --font-secondary: 'Roboto', system-ui, Helvetica, Arial, sans-serif;
+
+  --line-height: 1.5;
+  --font-weight-normal: 500;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 24px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 40px;
+
+  /* Espaciado */
+  --spacing-sm: 16px;
+  --spacing-md: 20px;
+  --spacing-lg: 32px;
+  --border-radius: 8px;
+}
