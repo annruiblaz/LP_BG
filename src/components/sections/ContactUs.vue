@@ -108,6 +108,13 @@
 </template>
 
 <style scoped>
+.container {
+  height: auto;
+  max-width: 1200px;
+  min-height: 350px;
+  margin: 0 auto;
+}
+
 .contact {
   background: var(--color-light);
   padding: var(--spacing-lg) var(--spacing-sm);
