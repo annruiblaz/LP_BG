@@ -11,7 +11,9 @@
   --color-light: #F8F9FA;
   --color-dark: #343A40;
   --color-dark-secondary: #001f3f;
-  --color-gray: #EEEEEE;
+  --color-gray: #CCC;
+  --color-error: #c15252;
+  --color-success: #155724;
 
   --color-text-light: #ffffff;
   --color-text-dark: #00003C;

@@ -7,17 +7,21 @@ export default {
       isScrolled: false,
       navItems: [
         { name: 'Inicio', id: 'hero' },
+        { name: 'Socios', id: 'partners' },
+        { name: 'Quiénes somos', id: 'about' },
         { name: 'Contacto', id: 'contactUs' },
       ],
     };
   },
   methods: {
     scrollToSection(id) {
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
+        const el = document.getElementById(id);
+        if (!el) return;
+        const yOffset = -180;
+        const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+        window.scrollTo({ top: y, behavior: 'smooth' });
         this.isMobileMenuOpen = false;
-      }
     },
     //para ajustar el fondo / estilo del navbar al hacer scroll
     handleScroll() {
@@ -104,7 +108,7 @@ export default {
   z-index: 10;
   padding: 0;
   font-family: var(--font-primary);
-  transition: all 0.3s ease;
+  transition: all .3s ease;
 
   &.scrolled {
     background-color: var(--color-shadow-90);
@@ -148,10 +152,11 @@ export default {
   font-family: var(--font-secondary);
   color: var(--color-text-dark);
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: var(--font-size-lg);
   font-weight: var(--font-weight-medium);
   padding: var(--spacing-sm) 0;
-  transition: color 0.3s ease;
+  cursor: pointer;
+  transition: color .3s ease;
 
   &::after {
     content: '';
@@ -162,6 +167,7 @@ export default {
     height: 2px;
     background-color: var(--color-primary);
     transition: width .3s ease-in;
+    border-radius: 2px;
   }
 
   &:hover {
@@ -189,7 +195,7 @@ export default {
   width: 24px;
   height: 18px;
   position: relative;
-  transition: all 0.3s ease;
+  transition: transform .5s ease, opacity .2s ease;
 }
 
 .bar {
@@ -197,8 +203,9 @@ export default {
   width: 100%;
   height: 2px;
   background-color: var(--color-primary-dark);
-  transition: all 0.3s ease;
+  transition: transform .5s ease, opacity .2s ease;
   transform-origin: center;
+  border-radius: 2px;
 }
 
 .navbar-toggle-icon.open .bar:nth-child(1) {
@@ -224,7 +231,7 @@ export default {
 
 .mobile-menu-enter-from,
 .mobile-menu-leave-to {
-  transform: translateY(-750px);
+  transform: translateY(-95%);
 }
 
 .navbar-mobile-menu {
@@ -254,12 +261,12 @@ export default {
 
 .navbar-mobile-link {
   color: var(--color-text-dark);
-  font-size: 1.25rem;
+  font-size: var(--font-size-lg);
   font-weight: var(--font-weight-medium);
   text-decoration: none;
   font-family: var(--font-secondary);
   padding: var(--spacing-sm) var(--spacing-md);
-  transition: all 0.3s ease;
+  transition: all .3s ease;
   width: 100%;
   text-align: center;
   border-radius: var(--border-radius);
@@ -279,8 +286,16 @@ export default {
     display: flex;
   }
 
+  .navbar-link {
+    font-size: var(--font-size-lg);
+  }
+
   .navbar-logo img {
     height: 75px;
+  }
+
+  .navbar-mobile-menu {
+    display: none;
   }
 }
 

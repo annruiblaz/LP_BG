@@ -7,43 +7,15 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import { 
-  faDumbbell,
-  faHeartbeat,
-  faRunning,
-  faUsers,
-  faUserTie,
-  faTruck,
-  faMedal,
-  faHandHoldingUsd,
-  faTools,
-  faSyncAlt,
-  faCheck,
-  faMapMarkerAlt,
-  faPhone,
-  faEnvelope,
-  faClock,
-  faXmark,
-  faBars
+  faHeadset,faCheck, faPhone, faQuoteLeft, faQuoteRight, faArrowRight, faIndustry,
+  faShieldHalved, faUserTie, faCouch, faTruckFast, faEarthEurope, faSwatchbook,
+  faCheckCircle, faMapMarkerAlt, faEnvelope, faClock
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
-  faDumbbell,
-  faHeartbeat,
-  faRunning,
-  faUsers,
-  faUserTie,
-  faTruck,
-  faMedal,
-  faHandHoldingUsd,
-  faTools,
-  faSyncAlt,
-  faCheck,
-  faMapMarkerAlt,
-  faPhone,
-  faEnvelope,
-  faClock,
-  faXmark,
-  faBars
+  faHeadset,faCheck, faPhone, faQuoteLeft, faQuoteRight, faArrowRight, faIndustry,
+  faShieldHalved, faUserTie, faCouch, faTruckFast, faEarthEurope, faSwatchbook,
+  faCheckCircle, faMapMarkerAlt, faEnvelope, faClock
 )
 
 const app = createApp(App)
