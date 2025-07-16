@@ -62,7 +62,7 @@ export default {
 .partners-section {
   padding: var(--spacing-lg) var(--spacing-sm);
   text-align: center;
-  background-color: var(--color-light);
+  background: linear-gradient(to bottom, var(--color-light) 20%,var(--color-bg-light) 100%);
 }
 
 .content {

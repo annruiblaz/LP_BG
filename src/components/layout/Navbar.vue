@@ -252,7 +252,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--spacing-lg);
   width: 100%;
   max-width: 300px;
   opacity: 1;

@@ -37,7 +37,7 @@
   max-width: 1200px;
   min-height: 350px;
   margin: 0 auto;
-  background-color: var(--color-light);
+  background-color: var(--color-bg-light);
   padding: var(--spacing-lg) var(--spacing-sm);
 }
 
@@ -92,17 +92,6 @@
 
 .btn-secondary {
   font-size: 20px;
-}
-
-.btn-secondary-icon {
-  margin-left: 4px;
-  transition: transform .3s ease;
-}
-
-.btn-secondary:hover {
-  .btn-secondary-icon {
-    transform: translateX(6px);
-  }
 }
 
 @media (min-width: 768px) {

@@ -88,6 +88,19 @@ a:hover {
     background-color: var(--color-primary-hover);
 }
 
+.btn-primary-icon,
+.btn-secondary-icon {
+  margin-left: 4px;
+  transition: transform .3s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  .btn-secondary-icon {
+    transform: translateX(6px);
+  }
+}
+
 /* Firefox */
 html {
     scrollbar-width: thin;

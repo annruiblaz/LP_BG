@@ -13,12 +13,10 @@
       <div class="hero-content">
         <h1 class="hero-title">Calidad de élite sin pagar de más.</h1>
         <p class="hero-subtitle">Mismo estándar que las grandes marcas, hasta <span>70%</span> menos.</p>
-        <button @click="redirectToContact" class="btn-primary hero-button">
+        <button @click="redirectToContact" class="btn-primary hero-btn">
           Consulta sin compromiso
-          <span class="btn-primary-icon hero-button-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+          <span class="btn-primary-icon">
+          <font-awesome-icon icon="arrow-right" class="btn-secondary-icon" />
           </span>
         </button>
       </div>
@@ -122,8 +120,14 @@
     max-width: 80%;
   }
 
-  .hero-button {
+  .hero-btn {
     padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-md);
+
+    .btn-secondary-icon {
+      font-size: (var(--font-size-lg));
+      margin-left: -5px;
+    }
   }
 }
 

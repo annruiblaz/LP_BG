@@ -116,7 +116,7 @@
 }
 
 .contact {
-  background: var(--color-light);
+  background: linear-gradient(to bottom, var(--color-bg-light) 2%,var(--color-light) 90%,var(--color-bg-light) 100%);
   padding: var(--spacing-lg) var(--spacing-sm);
   font-family: var(--font-secondary);
 }
