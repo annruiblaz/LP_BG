@@ -47,8 +47,8 @@ export default {
       <div class="footer-column">
         <h4 class="footer-title">Legal</h4>
         <nav class="footer-links">
-          <a href="/politica-privacidad" class="footer-link">Política de privacidad</a>
-          <a href="/terminos-condiciones" class="footer-link">Términos y condiciones</a>
+          <a href="#" class="footer-link">Política de privacidad</a>
+          <a href="#" class="footer-link">Términos y condiciones</a>
         </nav>
       </div>
     </div>
